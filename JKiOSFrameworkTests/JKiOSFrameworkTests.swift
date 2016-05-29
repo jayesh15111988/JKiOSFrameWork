@@ -21,16 +21,10 @@ class JKiOSFrameworkTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAddition() {
+        let numberAdder = JKNumberAddition()
+        let actualValue = numberAdder.addNumbers(50, num2: 50)
+        let expectedValue = 100
+        XCTAssertEqual(actualValue, expectedValue)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

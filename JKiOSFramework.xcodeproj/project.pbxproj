@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		38A96EC51CFBA35C00F575B8 /* JKiOSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A96EBA1CFBA35C00F575B8 /* JKiOSFramework.framework */; };
 		38A96ECA1CFBA35C00F575B8 /* JKiOSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A96EC91CFBA35C00F575B8 /* JKiOSFrameworkTests.swift */; };
-		38A96ED81CFBA87000F575B8 /* JKiOSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */; };
+		38A96ED81CFBA87000F575B8 /* JKiOSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A96EDA1CFBABB700F575B8 /* JKNumberAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A96ED91CFBABB700F575B8 /* JKNumberAddition.swift */; };
+		BEB4A5DDFF7394AF011C629C /* libPods-JKiOSFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3DC08F404D44D56FAB659C /* libPods-JKiOSFramework.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,10 @@
 		38A96EC91CFBA35C00F575B8 /* JKiOSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKiOSFrameworkTests.swift; sourceTree = "<group>"; };
 		38A96ECB1CFBA35C00F575B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKiOSFramework.h; sourceTree = "<group>"; };
+		38A96ED91CFBABB700F575B8 /* JKNumberAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKNumberAddition.swift; sourceTree = "<group>"; };
+		7C3DC08F404D44D56FAB659C /* libPods-JKiOSFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKiOSFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		816D1D06A2059F6ED3F402F3 /* Pods-JKiOSFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKiOSFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKiOSFramework/Pods-JKiOSFramework.release.xcconfig"; sourceTree = "<group>"; };
+		894314318BF3B2DCE17BDAEB /* Pods-JKiOSFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKiOSFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKiOSFramework/Pods-JKiOSFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB4A5DDFF7394AF011C629C /* libPods-JKiOSFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +63,8 @@
 				38A96EBC1CFBA35C00F575B8 /* JKiOSFramework */,
 				38A96EC81CFBA35C00F575B8 /* JKiOSFrameworkTests */,
 				38A96EBB1CFBA35C00F575B8 /* Products */,
+				CF92303DB052BC795AFC0510 /* Pods */,
+				E4CCCF08956BCDFA48E4FE1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +99,26 @@
 			isa = PBXGroup;
 			children = (
 				38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */,
+				38A96ED91CFBABB700F575B8 /* JKNumberAddition.swift */,
 			);
 			name = JKiOSFramework;
+			sourceTree = "<group>";
+		};
+		CF92303DB052BC795AFC0510 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				894314318BF3B2DCE17BDAEB /* Pods-JKiOSFramework.debug.xcconfig */,
+				816D1D06A2059F6ED3F402F3 /* Pods-JKiOSFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4CCCF08956BCDFA48E4FE1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C3DC08F404D44D56FAB659C /* libPods-JKiOSFramework.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38A96ECE1CFBA35C00F575B8 /* Build configuration list for PBXNativeTarget "JKiOSFramework" */;
 			buildPhases = (
+				7D611B08373AECF7F892EB41 /* 📦 Check Pods Manifest.lock */,
 				38A96EB51CFBA35C00F575B8 /* Sources */,
 				38A96EB61CFBA35C00F575B8 /* Frameworks */,
 				38A96EB71CFBA35C00F575B8 /* Headers */,
 				38A96EB81CFBA35C00F575B8 /* Resources */,
+				F1066ED7E13FCEBE68FB5891 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,11 +226,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D611B08373AECF7F892EB41 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1066ED7E13FCEBE68FB5891 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKiOSFramework/Pods-JKiOSFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38A96EB51CFBA35C00F575B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A96EDA1CFBABB700F575B8 /* JKNumberAddition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +380,10 @@
 		};
 		38A96ECF1CFBA35C00F575B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894314318BF3B2DCE17BDAEB /* Pods-JKiOSFramework.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -329,12 +395,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKiOSFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		38A96ED01CFBA35C00F575B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816D1D06A2059F6ED3F402F3 /* Pods-JKiOSFramework.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -388,6 +458,7 @@
 				38A96ED01CFBA35C00F575B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38A96ED11CFBA35C00F575B8 /* Build configuration list for PBXNativeTarget "JKiOSFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +467,7 @@
 				38A96ED31CFBA35C00F575B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
