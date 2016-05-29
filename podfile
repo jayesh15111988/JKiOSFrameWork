@@ -5,5 +5,6 @@ xcodeproj 'JKiOSFramework'
 
 target 'JKiOSFramework' do
     pod 'BlocksKit', '~> 2.2'
+    pod 'JKiOSFramework', :git => 'git@github.com:jayesh15111988/JKiOSFramework.git' , :tag => '~> 0.0.1'
 end
 

@@ -11,6 +11,7 @@
 		38A96ECA1CFBA35C00F575B8 /* JKiOSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A96EC91CFBA35C00F575B8 /* JKiOSFrameworkTests.swift */; };
 		38A96ED81CFBA87000F575B8 /* JKiOSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38A96EDA1CFBABB700F575B8 /* JKNumberAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A96ED91CFBABB700F575B8 /* JKNumberAddition.swift */; };
+		38A96EDD1CFBB48200F575B8 /* JKNumberAddition.swift in Headers */ = {isa = PBXBuildFile; fileRef = 38A96ED91CFBABB700F575B8 /* JKNumberAddition.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB4A5DDFF7394AF011C629C /* libPods-JKiOSFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3DC08F404D44D56FAB659C /* libPods-JKiOSFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A96ED81CFBA87000F575B8 /* JKiOSFramework.h in Headers */,
+				38A96EDD1CFBB48200F575B8 /* JKNumberAddition.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +311,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -358,6 +361,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
