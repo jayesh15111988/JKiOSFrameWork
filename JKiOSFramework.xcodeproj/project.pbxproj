@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38A96EBE1CFBA35C00F575B8 /* JKiOSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A96EBD1CFBA35C00F575B8 /* JKiOSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38A96EC51CFBA35C00F575B8 /* JKiOSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A96EBA1CFBA35C00F575B8 /* JKiOSFramework.framework */; };
 		38A96ECA1CFBA35C00F575B8 /* JKiOSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A96EC91CFBA35C00F575B8 /* JKiOSFrameworkTests.swift */; };
+		38A96ED81CFBA87000F575B8 /* JKiOSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		38A96EBA1CFBA35C00F575B8 /* JKiOSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKiOSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A96EBD1CFBA35C00F575B8 /* JKiOSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKiOSFramework.h; sourceTree = "<group>"; };
 		38A96EBF1CFBA35C00F575B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38A96EC41CFBA35C00F575B8 /* JKiOSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKiOSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A96EC91CFBA35C00F575B8 /* JKiOSFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKiOSFrameworkTests.swift; sourceTree = "<group>"; };
 		38A96ECB1CFBA35C00F575B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKiOSFramework.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		38A96EBC1CFBA35C00F575B8 /* JKiOSFramework */ = {
 			isa = PBXGroup;
 			children = (
-				38A96EBD1CFBA35C00F575B8 /* JKiOSFramework.h */,
+				38A96ED41CFBA81800F575B8 /* JKiOSFramework */,
 				38A96EBF1CFBA35C00F575B8 /* Info.plist */,
 			);
 			path = JKiOSFramework;
@@ -86,6 +86,14 @@
 			path = JKiOSFrameworkTests;
 			sourceTree = "<group>";
 		};
+		38A96ED41CFBA81800F575B8 /* JKiOSFramework */ = {
+			isa = PBXGroup;
+			children = (
+				38A96ED71CFBA87000F575B8 /* JKiOSFramework.h */,
+			);
+			name = JKiOSFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +101,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A96EBE1CFBA35C00F575B8 /* JKiOSFramework.h in Headers */,
+				38A96ED81CFBA87000F575B8 /* JKiOSFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +324,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JKiOSFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKiOSFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +341,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JKiOSFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKiOSFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
