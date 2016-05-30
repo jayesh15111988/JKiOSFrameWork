@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "JKiOSFramework"
-  spec.version = "0.0.2"
+  spec.version = "0.0.3"
   spec.summary = "A sample iOS framework which does nothing special"
   spec.homepage = "https://github.com/jayesh15111988/JKiOSFramework"
   spec.license = { type: 'MIT', file: 'LICENSE' }
